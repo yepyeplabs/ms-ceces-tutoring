@@ -1,0 +1,11 @@
+@mixin font-thick {
+  font-weight: 400;
+}
+@mixin font-thin {
+  font-weight: 100;
+}
+@mixin centerContents {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
