@@ -1,7 +1,21 @@
-export const font = 'Palanquin';
-export const fontColor = '#232532';
-export const primary = '#dd6955';
-export const active = '#6e633d';
-export const background = '#fff';
-export const primaryTransparent = '#dd695530';
-export const activeTransparent = '#6e633d50';
+const active = '#6e633d';
+const activeTransparent = '#6e633d50';
+const appWidth = '90vw';
+const background = '#fff';
+const font = 'font-family: Palanquin';
+const fontColor = '#232532';
+const primary = '#dd6955';
+const primaryTransparent = '#dd695530';
+const borderRadius = '.25rem';
+
+export {
+  active,
+  activeTransparent,
+  appWidth,
+  background,
+  borderRadius,
+  font,
+  fontColor,
+  primary,
+  primaryTransparent,
+};

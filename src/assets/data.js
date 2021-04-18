@@ -35,7 +35,7 @@ export const data = {
     'Earth Science',
     'Reading',
   ],
-  gradeLevel: [
+  gradeLevels: [
     'Pre-K',
     'Kindergarten',
     '1st Grade',
