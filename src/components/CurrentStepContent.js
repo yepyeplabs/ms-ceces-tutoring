@@ -103,15 +103,7 @@ export default function CurrentStepContent(props) {
       case 1:
         return (
           <Step1>
-            <StyledDropdown
-              searchable={false}
-              options={subjects.map((sub) => ({ label: sub, value: sub }))}
-              placeholder="Select a subject"
-              onChange={(option) => {
-                console.log(option[0].label);
-                handleDropdownChanges('subject', option[0].label);
-              }}
-            />
+            {subjects.map(sub => <button>{sub}</button>)}
             <StyledDropdown
               searchable={false}
               options={gradeLevels.map((grade) => ({
