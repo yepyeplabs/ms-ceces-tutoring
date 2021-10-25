@@ -129,61 +129,8 @@ export default function CurrentStepContent(props) {
       case 2:
         return (
           <Step2>
-            <StyledDropdown
-              key={1}
-              placeholder="Select a day"
-              searchable={false}
-              options={days()}
-              itemRenderer={renderDayOption}
-            />
-            <TimeSelection>
-              <div style={{ flexGrow: 1 }}>
-                Please select a time in between 10AM and 10PM.
-              </div>
-              <div
-                style={{
-                  flexGrow: 1,
-                  display: 'flex',
-                  maxWidth: '100%',
-                  alignItems: 'center',
-                }}
-              >
-                <TimeInput type="text" placeholder="1" />
-                <TimeInput type="text" placeholder="0" />
-                <div
-                  className="colon-container"
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    justifyContent: 'space-around',
-                  }}
-                >
-                  <div
-                    className="top-dot"
-                    style={{
-                      width: '8px',
-                      height: '8px',
-                      backgroundColor: activeTransparent,
-                      borderRadius: '50%',
-                      border: `2px solid ${fontColor}`,
-                    }}
-                  ></div>
-                  <div
-                    className="bottom-dot"
-                    style={{
-                      width: '8px',
-                      height: '8px',
-                      backgroundColor: activeTransparent,
-                      borderRadius: '50%',
-                      border: `2px solid ${fontColor}`,
-                    }}
-                  ></div>
-                </div>
-                <TimeInput type="text" placeholder="0" />
-                <TimeInput type="text" placeholder="0" />
-                <span>{state.morning ? 'AM' : 'PM'}</span>
-              </div>
-            </TimeSelection>
+            Schedule a day and time here
+            
             <NextButton disabled={state.buttonDisabled} />
           </Step2>
         );
